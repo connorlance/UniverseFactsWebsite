@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!-- This website template was created by : Connor Lance -->
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="css/styles.css">
+	<title>Connor's Universe Facts</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Connor Lance">
+	<meta name="description" content="Suggestions form to send in facts for connors universe facts">
+</head>
+
+
+<body>
+<div id="container">
+	<!-- Use the header area for the website name or logo -->
+	<header>
+	Suggestions
+	</header>
+	
+	<script src= "form.js"></script>
+	
+	
+	<!-- Use the nav area to add hyperlinks to other pages within the website -->
+	<nav>
+	<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="information.html">Information</a></li>
+			<li><a href="sources.html">Sources</a></li>
+			<li><a href="suggestions.html">Suggestions</a><li>
+		</ul>
+	</nav> 
+	
+	<!-- Use the main area to add the main content of the webpage -->
+	<main>
+	<div id="suggestiontext">
+		<h1> Send in suggestions about facts you would like to see on the website.</h1>
+		</div>
+		<form>
+		
+		
+		<div class="general">
+				<label for="fullname">Name: </label>
+				<input type="text" id="fullname" name="name"
+				size="15" placeholder="Enter your name">
+		
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"
+				size="15" placeholder="email address">
+		
+				<label for="subject">What subject is the fact?
+				</label>
+				<select id="subject" name="subject">
+				<option value="galaxies">Galaxies</option>
+				<option value="solarsystem">Solar System</option>
+				<option value="blackholes">Black Holes</option>
+				<option value="universetheories">Universe Theories</option>
+				<option value="other">Other</option>
+				</select>
+			</div>
+			
+			<div class="essay">
+				<label for="suggestion">Describe your suggested fact.</label>
+				<textarea name="suggestion" id="suggestion"></textarea>
+			</div>
+			
+			
+			<input type="submit" id="submit" value="Submit Suggestion" class="btn" onclick="submitAlert()">
+			<input type="reset" id="reset" value="Reset Form"
+			class="btn">
+		
+		</form>
+	
+	
+	
+	</main>
+	
+	<!-- Use the footer area to add webpage footer content -->
+	<footer>
+	<a href="mailto:clance2@student.clayton.edu">clance2@student.clayton.edu</a> <br>
+	Due date: 04/9/23
+	</footer>
+	</div>
+</body>
+</html>
